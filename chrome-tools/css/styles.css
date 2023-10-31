@@ -1,0 +1,41 @@
+body{
+    background: lightblue;
+    font-family: fantasy;
+}
+dt {
+    color:blanchedalmond
+}
+dd {
+    color:green;
+    font-family:monospace;
+}
+
+ul {
+    list-style-type: disclosure-closed;
+    color:indianred
+}
+
+ol {
+    list-style-type:square;
+    color: cornflowerblue;
+}
+img {
+    margin: 10px auto;
+    width: 180px;
+    height: 180px;
+    border: 6px solid blue;
+    border-radius: 100%;
+    display: block;
+}
+figure {
+    border: 2px solid brown;
+    border-radius: 100%;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    
+}
+figcaption {
+    color:crimson;
+    font-size: smaller;
+}

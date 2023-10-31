@@ -1,0 +1,33 @@
+body{
+    background: ivory;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    text-align: center;
+
+}
+nav a {
+    
+    text-decoration: none;
+    margin-left: 50px;
+    background: black;
+    color : ivory;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+nav a:hover {
+    background: gray;
+    color: black;
+}
+li a {
+    line-height: 2;
+    color:maroon;
+    font-size: large;
+    font-weight: bold;
+
+
+}
+li a:hover {
+    text-decoration: underline;
+}
