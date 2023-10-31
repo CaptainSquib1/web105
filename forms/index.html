@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+        
+    <main class="container">
+        <h1>Forms</h1>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your First Name" size="50" autofocus><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" size="50" placeholder="Enter your Last Name"><br><br>
+            <input type="submit" value="Click if you like T acos">
+          </form> 
+          <form action="your_action_page.php" method="post">
+            <fieldset>
+                <legend>Taco Toppings</legend>
+                <label for="cheese">
+                    <input type="checkbox" id="cheese" name="toppings[]" value="cheese"> Cheese
+                </label><br>
+                <label for="onions">
+                    <input type="checkbox" id="onions" name="toppings[]" value="onions"> Onions
+                </label><br>
+                <label for="guacamole">
+                    <input type="checkbox" id="guacamole" name="toppings[]" value="guacamole"> Guacamole
+                </label><br>
+                <label for="lettuce">
+                    <input type="checkbox" id="lettuce" name="toppings[]" value="lettuce"> Lettuce
+                </label><br>
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" value="taco" required><br>
+          
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" value="helicopter" required><br>
+          
+            <input type="submit" value="Submit">
+        </form>
+        <form>
+            <fieldset>
+                <legend>What is your favorite fish?</legend>
+                <label>
+                    <input type="radio" name="fish" value="salmon">
+                    Salmon
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="fish" value="tuna">
+                    Tuna
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="fish" value="cod">
+                    Cod
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="fish" value="trout">
+                    Trout
+                </label>
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <form>
+            <label for="languages">Select a coding language:</label>
+            <select id="languages" name="languages">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+            </select>
+            <br><br>
+            <label for="topic">Select a topic:</label>
+            <select id="topic" name="topic">
+                <option value="basics">Basics</option>
+                <option value="syntax">Syntax</option>
+                <option value="frameworks">Frameworks</option>
+                <option value="libraries">Libraries</option>
+                <option value="tools">Tools</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+
+    <footer class="container">
+        <h3>Footer</h3>
+        <p>&copy; 2023 Frank Frantz</p>
+    </footer>
+    
+    
+</body>
+</html>
