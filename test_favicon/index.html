@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link id="favicon" rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <title>Your Website</title>
+</head>
+<body>
+  <script>
+    (function () {
+      const faviconFrames = [
+        'favicon.ico',
+        'favicon-3.ico', // Add more frames here
+      ];
+      let currentIndex = 0;
+      const faviconElement = document.getElementById('favicon');
+
+      function updateFavicon() {
+        faviconElement.href = faviconFrames[currentIndex];
+        currentIndex = (currentIndex + 1) % faviconFrames.length;
+      }
+
+      // Update the favicon every 1000 milliseconds (1 second)
+      setInterval(updateFavicon, 1000);
+    })();
+  </script>
+</body>
+</html>
